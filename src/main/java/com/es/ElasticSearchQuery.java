@@ -8,7 +8,6 @@ import co.elastic.clients.elasticsearch.core.search.TotalHits;
 import co.elastic.clients.elasticsearch.core.search.TotalHitsRelation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.elasticsearch.action.get.GetRequest;
 import java.io.IOException;
 import java.util.*;
 
