@@ -9,13 +9,16 @@ import org.elasticsearch.client.RestClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import static com.es.config.ElasticSearchConfig.elasticSearchHost;
+import static com.es.config.ElasticSearchConfig.elasticSearchPort;
+
 @Configuration
 public class ElasticSearchConfiguration
 {
     @Bean
     public RestClient getRestClient() {
         RestClient restClient = RestClient.builder(
-                new HttpHost("localhost", 9200)).build();
+                new HttpHost(elasticSearchHost,elasticSearchPort)).build();
         return restClient;
     }
 
