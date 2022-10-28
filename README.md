@@ -1,2 +1,2 @@
-# 
-this service will generate the rondom device data 
+# Simulator
+service will generate device data 
